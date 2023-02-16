@@ -240,6 +240,31 @@
  }
  /* facts section style end */
 
+ /* service style start  */
+ #services{
+    margin-top: 130px;
+ }
+ .service{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+ }
+ .service-image{
+    width: 500px;
+ }
+ .service-details-text{
+    font-size: 35px;
+    font-weight: 700;
+    margin-bottom: 10px;
+ }
+ .service-details-paragraph{
+    color: #727272;
+ }
+ .service-right{
+    width: 400px;
+ }
+ /* service style end */
+
  /* sponcpors style start  */
  #sponsors{
     margin-top: 150px;
@@ -264,6 +289,25 @@
  }
  /* sponcpors style end  */
 
+ /* footer style start  */
+ footer{
+    margin-top: 130px;
+ }
+ .footer{
+    background: #FFF4E7;
+    border-radius: 8px;
+    height: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+ }
+ .footer-details{
+    font-weight: 400;
+    font-size: 20px;
+    color: #424242;
+ }
+ /* footer style end */
+
 /* media quries */
 
 /* mobile device */
@@ -285,14 +329,14 @@
     #banner{
         padding-top: 70px;
     }
-    .banner-head, .feature, .features-enjoy-main, .facts-main, .sponsor{
+    .banner-head, .feature, .features-enjoy-main, .facts-main, .sponsor, .footer, .service{
         width: 100%;
     }
     .banner-details{
         justify-content: center;
         padding: 10px;
     }
-    .bannerhead-details, .feature-details-text, .features-details-text, .facts-details-text, .sponsors-details-text{
+    .bannerhead-details, .feature-details-text, .features-details-text, .facts-details-text, .sponsors-details-text, .service-details-text{
         font-size: 30px;
     }
     .banner-paragraph{
@@ -349,8 +393,14 @@
     .features-enjoy-right-img{
         width: 320px;
     }
-   .experience, .sticky{
+    .sticky{
     display: none;
+   }
+   .experience{
+    width: 250px;
+    position: absolute;
+    left: 85px;
+    bottom: 50px;
    }
    .facts-details{
     text-align: center;
@@ -364,6 +414,18 @@
    .card{
     margin-top: 25px;
    }
+   .service{
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+   }
+   .service-image{
+    width: 350px;
+   }
+   .service-details{
+    margin-top: 15px;
+    padding: 0 20px 0 20px;
+   }
    .sponsors-details{
     padding: 20px;
    }
@@ -375,5 +437,12 @@
    }
    .sponsor-company img{
     margin-bottom: 25px;
+   }
+  footer{
+    margin-top: 50px;
+  }
+   .footer-details{
+    font-size: 16px;
+    padding: 0 20px 0 20px;
    }
 }
