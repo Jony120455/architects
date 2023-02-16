@@ -287,6 +287,9 @@
     justify-content: space-between;
     margin-top: 50px;
  }
+ .sponsor-company img{
+    filter: grayscale(1);
+ }
  /* sponcpors style end  */
 
  /* footer style start  */
