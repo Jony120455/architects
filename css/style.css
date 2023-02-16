@@ -240,6 +240,30 @@
  }
  /* facts section style end */
 
+ /* sponcpors style start  */
+ #sponsors{
+    margin-top: 150px;
+ }
+ .sponsors-details{
+    text-align: center;
+ }
+ .sponsors-details-text{
+    font-weight: 700;
+    font-size: 45px;
+    color: #131313;
+
+ }
+ .sponsors-details-paragraph{
+    color: #727272;
+    margin-top: 24px;
+ }
+ .sponsor-company{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 50px;
+ }
+ /* sponcpors style end  */
+
 /* media quries */
 
 /* mobile device */
@@ -261,14 +285,14 @@
     #banner{
         padding-top: 70px;
     }
-    .banner-head, .feature, .features-enjoy-main, .facts-main{
+    .banner-head, .feature, .features-enjoy-main, .facts-main, .sponsor{
         width: 100%;
     }
     .banner-details{
         justify-content: center;
         padding: 10px;
     }
-    .bannerhead-details, .feature-details-text, .features-details-text, .facts-details-text{
+    .bannerhead-details, .feature-details-text, .features-details-text, .facts-details-text, .sponsors-details-text{
         font-size: 30px;
     }
     .banner-paragraph{
@@ -297,7 +321,7 @@
     .features-btn{
         margin-top: 15px;
     }
-    #features-enjoy, #facts{
+    #features-enjoy, #facts, #sponsors{
         margin-top: 50px;
     }
     .features-enjoy-left{
@@ -339,5 +363,17 @@
    }
    .card{
     margin-top: 25px;
+   }
+   .sponsors-details{
+    padding: 20px;
+   }
+   .sponsor-company{
+    margin-top: 20px;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+   }
+   .sponsor-company img{
+    margin-bottom: 25px;
    }
 }
