@@ -131,7 +131,7 @@
 }
 .features-enjoy-details{
     width: 500px;
-    height: 982px;
+    height: 100%;
     margin-top: 30px;
 }
 .features-enjoy-head{
@@ -182,7 +182,7 @@
     background: #FF900E;
     border-radius: 8px;
     position: absolute;
-    bottom: 190px;
+    bottom: -20px;
     left: 0;
     color: #FFFFFF;
 }
@@ -192,7 +192,53 @@
     color: #FFFFFF;
 }
 /* features-enjoy style end */
+ /* facts section style start */
 
+ #facts{
+    margin-top: 130px;
+ }
+.facts-details-text{
+    font-weight: 700;
+    font-size: 45px;
+    color: #131313;
+}
+ .facts-details-paragraph{
+    font-weight: 400;
+    font-size: 16px;
+    color: #727272;
+    margin-top: 10px;
+ } 
+ .facts-cards{
+    display: flex;
+    justify-content: space-evenly;
+ }
+ .card{
+    width: 241px;
+    height: 241px;
+    border: 1px solid #FF900E;
+    border-radius: 8px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    margin-top: 100px;
+    transition: all 1s ease;
+ } 
+ .facts-cards :hover.card {
+    transform: translateY(-7px);
+  }
+ .card-details h2{
+    font-weight: 600;
+    font-size: 45px;
+    color: #424242;
+ } 
+ .card-details p{
+    font-weight: 600;
+    font-size: 20px;
+    color: #727272;
+ }
+ /* facts section style end */
 
 /* media quries */
 
@@ -215,14 +261,14 @@
     #banner{
         padding-top: 70px;
     }
-    .banner-head, .feature,.features-enjoy-main{
+    .banner-head, .feature, .features-enjoy-main, .facts-main{
         width: 100%;
     }
     .banner-details{
         justify-content: center;
         padding: 10px;
     }
-    .bannerhead-details, .feature-details-text, .features-details-text{
+    .bannerhead-details, .feature-details-text, .features-details-text, .facts-details-text{
         font-size: 30px;
     }
     .banner-paragraph{
@@ -251,7 +297,7 @@
     .features-btn{
         margin-top: 15px;
     }
-    #features-enjoy{
+    #features-enjoy, #facts{
         margin-top: 50px;
     }
     .features-enjoy-left{
@@ -274,11 +320,24 @@
         display: flex;
         justify-content: center;
         align-items: center;
+        margin-top: 20px;
     }
     .features-enjoy-right-img{
         width: 320px;
     }
    .experience, .sticky{
     display: none;
+   }
+   .facts-details{
+    text-align: center;
+    padding: 20px;
+   }
+   .facts-cards{
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+   }
+   .card{
+    margin-top: 25px;
    }
 }
