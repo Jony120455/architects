@@ -1,0 +1,229 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Work Sans', sans-serif;
+}
+/* container width  */
+.container{
+    width: 1140px;
+    margin: 0 auto;
+}
+/* header style start  */
+#header{
+    background: rgba(255, 144, 14, 0.1);
+    width: 100%;
+    height: 100%;
+    padding-bottom: 50px;
+}
+.nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 50px;
+}
+.architects-logo{
+    font-weight: 700;
+    font-size: 45px;
+}
+.menu{
+    display: flex;
+    list-style: none;
+}
+.menu li a{
+    text-decoration: none;
+    color: #424242;
+    font-weight: 500;
+    font-size: 18px;
+    margin-left: 40px;
+}
+/* banner style  */
+#banner{
+    padding-top: 102px;
+}
+.banner-details{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.bannerhead-details{
+    font-weight: 700;
+    font-size: 64px;
+    color: #131313;
+}
+.banner-paragraph{
+    color: #727272;
+    padding-top: 25px;
+    text-align: center;
+}
+.btn{
+    display: flex;
+    justify-content: center;
+    
+}
+.explore-btn, .features-btn{
+    padding: 21px 25px;
+    text-align: center;
+    border: none;
+    background: #FF900E;
+    border-radius: 8px;
+    font-weight: 600;
+    font-size: 20px;
+    color: #FFFFFF; 
+    margin-top: 32px;  
+}
+.banner-image{
+    width: 100%;
+    padding-top: 50px;
+}
+/* features style start  */
+#features{
+    margin-top: 85px;
+}
+.feature{
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+.feature-left{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    gap: 24px;
+}
+.feature-img img{
+    width: 300px;
+    height: 300px;
+}
+.feature-right{
+    margin-left: 70px;
+}
+.feature-details-text{
+    font-size: 45px;
+    font-weight: 700;
+}
+.quick{
+    font-weight: 500;
+    color: #727272;
+}
+.our-features{
+    color: #FF900E;
+}
+.features-pragraph{
+    font-weight: 400;
+    font-size: 16px;
+    color: #727272;
+    margin-top: 24px;
+}
+
+/* features-enjoy style start  */
+#features-enjoy{
+    margin-top: 130px;
+}
+.features-enjoy-main{
+    display: flex;
+    justify-content: space-between;
+}
+.features-details-text{
+    font-weight: 700;
+    font-size: 45px;
+    color: #131313;
+    margin-left: 21px;
+}
+.features-enjoy-details{
+    width: 500px;
+    height: 982px;
+    margin-top: 30px;
+}
+.features-enjoy-head{
+    position: relative;
+}
+.features-details-paragraph{
+    font-weight: 400;
+    font-size: 16px;
+    color: #727272;
+    margin-top: 24px;
+}
+.features-enjoy-artical{
+    margin-top: 50px;
+}
+.features-enjoy-artical h3{
+    font-weight: 600;
+    font-size: 20px;
+    color: #131313;
+}
+.features-enjoy-artical p{
+    font-weight: 400;
+    font-size: 16px;
+    color: #727272;
+    margin-top: 10px;
+}
+.sticky{
+    width: 5px;
+    height: 106px;
+    background: #FF900E;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+.features-enjoy-right-img{
+    width: 600px;
+    height: 700px;
+}
+/* media quries */
+/* mobile device */
+
+@media only screen and (max-width: 576px) {
+    .nav{
+        width: 100%;
+        flex-direction: column; 
+    }
+    .menu{
+        flex-direction: column;
+        justify-content: center;   
+    }
+    .menu li{
+        padding-top: 20px;
+    }
+    .menu li a{
+        margin-left: 0;   
+    }
+    #banner{
+        padding-top: 70px;
+    }
+    .banner-head, .feature{
+        width: 100%;
+    }
+    .banner-details{
+        justify-content: center;
+        padding: 10px;
+    }
+    .bannerhead-details, .feature-details-text{
+        font-size: 30px;
+    }
+    .banner-paragraph{
+        font-size: 16px;
+        text-align: justify;
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+    .feature{
+        flex-direction: column;
+        justify-content: center;
+    } 
+     .feature-left{
+        grid-template-columns: repeat(1,1fr);
+    } 
+     .feature-right{
+        width: 300px;
+        margin-left: 0;
+        padding: 20px;
+        text-align: center;
+    }
+    .features-pragraph{
+        margin-top: 15px;
+        text-align: justify;
+    }
+    .features-btn{
+        margin-top: 15px;
+    }
+}
