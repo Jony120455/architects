@@ -425,10 +425,15 @@
    .service-image{
     width: 350px;
    }
-   .service-details{
-    margin-top: 15px;
-    padding: 0 20px 0 20px;
+   .service-right{
+    width: 100%;
    }
+   .service-details{
+    text-align: center;
+    margin-top: 15px;
+    padding: 0 20px 0  20px;
+   }
+  
    .sponsors-details{
     padding: 20px;
    }
